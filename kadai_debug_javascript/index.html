@@ -67,6 +67,11 @@
                 document.getElementById('error').innerText = "マイナスは入力できません";
                 document.getElementById('error').classList.remove('hidden');
                 return;
+            } else {
+                document.getElementById('error').innerText = "";
+                document.getElementById('error').classList.remove('hidden');
+                return;
+
             }
 
             document.getElementById('error').classList.add('hidden-text-danger');
